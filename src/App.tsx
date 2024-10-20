@@ -4,7 +4,7 @@ import TextTransition, { presets } from "react-text-transition";
 import pop from "../src/assets/pop.mp3";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const GAME_TIME = 1;
+const GAME_TIME = 30;
 
 const App: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -82,7 +82,7 @@ const App: React.FC = () => {
               left: `${targetPosition.left}%`,
               width: "50px",
               height: "50px",
-              backgroundColor: "#28242c",
+              backgroundColor: "red",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
